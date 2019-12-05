@@ -137,4 +137,6 @@ let footerCopyRight = document.querySelector('footer p')
 
 footerCopyRight.innerHTML = siteContent.footer.copyright
 
-//attempts at stretch goals//
+
+
+
