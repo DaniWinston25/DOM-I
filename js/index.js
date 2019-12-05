@@ -97,7 +97,21 @@ let middleImg = document.getElementById('middle-img')
 
 middleImg.src = siteContent['main-content']['middle-img-src']
 
-//contact Info//
+//contact header//
+let contactHeader = document.querySelector('.contact h4')
 
+contactHeader.innerText = siteContent.contact['contact-h4']
 
+//contact info//
+let contactInfo = document.querySelectorAll('.contact p')
+
+contactInfo[0].textContent = siteContent.contact['address']
+contactInfo[1].innerText = siteContent['contact']['phone']
+contactInfo[2].innerHTML = siteContent['contact']['email']
+
+//footer//
+
+let footerCopyRight = document.querySelector('footer p')
+
+footerCopyRight.innerHTML = siteContent.footer.copyright
 
