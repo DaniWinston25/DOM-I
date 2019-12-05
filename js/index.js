@@ -55,5 +55,14 @@ let ctaText = document.querySelector('.cta-text h1')
 
 ctaText.textContent = siteContent.cta.h1
 
+let ctaButton = document.querySelector('.cta button')
+
+ctaButton.textContent = siteContent.cta.button
+
+let ctaImg = document.getElementById('cta-img')
+
+ctaImg.src = siteContent.cta['img-src']
+
+
 
 
