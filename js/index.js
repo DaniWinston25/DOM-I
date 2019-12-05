@@ -55,6 +55,28 @@ navLinks[3].text = siteContent.nav['nav-item-4'];
 navLinks[4].text = siteContent.nav['nav-item-5'];
 navLinks[5].text = siteContent.nav['nav-item-6'];
 
+//nav color update//
+navLinks.forEach(link =>{
+  link.style.color = 'green'
+})
+
+//Appendchild task//
+
+let nav = document.querySelector('nav')
+let facebookLink = document.createElement('a'
+)
+facebookLink.innerText ="Facebook"
+nav.append(facebookLink)
+
+facebookLink.style.color = 'rgb(59, 89, 152)'
+
+//PreprendChild task//
+let InstagramLink = document.createElement('a')
+InstagramLink.innerText = "Instagram"
+nav.prepend(InstagramLink)
+
+InstagramLink.style.color = "#008080"
+
 //main text//
 let ctaText = document.querySelector('.cta-text h1')
 
@@ -115,3 +137,4 @@ let footerCopyRight = document.querySelector('footer p')
 
 footerCopyRight.innerHTML = siteContent.footer.copyright
 
+//attempts at stretch goals//
