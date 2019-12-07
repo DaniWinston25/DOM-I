@@ -79,8 +79,11 @@ InstagramLink.style.color = "#008080"
 
 //main text//
 let ctaText = document.querySelector('.cta-text h1')
-
 ctaText.textContent = siteContent.cta.h1
+
+let ctaTextH1 = document.querySelector('.cta-text h1')
+siteContent.cta.h1 = "DOM <br> Is <br> Awesome"
+ctaTextH1.innerHTML = siteContent['cta']['h1']
 
 
 //buttom//
@@ -136,7 +139,6 @@ contactInfo[2].innerHTML = siteContent['contact']['email']
 let footerCopyRight = document.querySelector('footer p')
 
 footerCopyRight.innerHTML = siteContent.footer.copyright
-
 
 
 
